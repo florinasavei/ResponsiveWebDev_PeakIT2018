@@ -1,1 +1,0 @@
-Note: the scripts must be started from their containing folder.
