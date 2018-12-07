@@ -64,10 +64,3 @@ function animateElement(currentEl){
     currentEl.classList.remove("do-flip");
   }, 1000);
 }
-
-function goingHome() {
-  window.location.href = window.location.href.substring(
-    0,
-    window.location.href.indexOf("helloWorld")
-  );
-}
