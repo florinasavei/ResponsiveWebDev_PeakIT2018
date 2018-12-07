@@ -2,11 +2,8 @@
 	"version": 3,
 	"file": "main.css",
 	"sources": [
-		"../scss/main.scss",
-		"../../components/scss/_header.scss",
-		"../../components/scss/_footer.scss",
-		"../../components/scss/_helpers.scss"
+		"../scss/main.scss"
 	],
 	"names": [],
-	"mappings": "ACAA,AACI,gBADY,CACZ,CAAC,AAAA,CACG,eAAe,CAAE,IAAI,CACrB,WAAW,CAAE,IAAI,CACpB,ACJL,AAAA,gBAAgB,AAAA,CACZ,gBAAgB,CAAE,SAAS,CAC9B,ACFD,AAAA,QAAQ,CAAC,CAAC,AAAA,OAAO,AAAA,CACb,eAAe,CAAE,SAAS,CAC1B,KAAK,CAAE,IAAI,CACd,AAED,AAAA,WAAW,AAAA,CACP,QAAQ,CAAE,MAAM,CAChB,GAAG,CAAC,CAAC,CACR,AHJD,AAAA,IAAI,AAAA,CACA,gBAAgB,CAAE,OAAkB,CAWvC,AAZD,AAIY,IAJR,CAEA,IAAI,CACA,IAAI,CACA,GAAG,AAAA,CACC,OAAO,CAAE,MAAM,CAClB,AANb,AAOY,IAPR,CAEA,IAAI,CACA,IAAI,CAIA,QAAQ,AAAA,CACJ,WAAW,CAAE,IAAI,CACpB"
+	"mappings": ""
 }
