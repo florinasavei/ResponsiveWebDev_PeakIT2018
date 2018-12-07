@@ -3,9 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   loadHeader();
   loadFooter();
   insertFavicon();
-  reactToLoadedComponents();
   init();
-  handleJokesFilterChange();
 });
 
 function init() {
@@ -18,15 +16,6 @@ function init() {
 
   //event listeners
   getJokeButton.addEventListener("click", getJokeFromServer);
-
-  getJokeButton.addEventListener("contextmenu", function(event) {
-    event.preventDefault();
-  });
-
-  getJokeButton.addEventListener("dblclick", function(event) {
-    event.preventDefault();
-    alert("don't you dobule click me!!");
-  });
 
   function getJokeFromServer() {
     var firstNameVal = document.querySelector("#firstName").value;
@@ -74,36 +63,4 @@ function init() {
     document.querySelector("#jokeContainer p#actualJokeFromServer").innerHTML =
       joke.value.joke;
   }
-}
-
-function handleJokesFilterChange(){
-  document.querySelector('#filderMature').addEventListener('change',function(){
-    debugger;
-    var lockIcon = document.getElementById('lockIcon');
-    if(lockIcon.classList.contains('fa-lock')){
-      lockIcon.classList.remove('fa-lock');
-      lockIcon.classList.add('fa-lock-open');
-    }else{
-      lockIcon.classList.remove('fa-lock-open');
-      lockIcon.classList.add('fa-lock');
-    }
-
-  });
-}
-
-function reactToLoadedComponents() {
-  document.addEventListener(
-    "headerLoaded",
-    function(e) {
-      console.log("header loaded");
-    },
-    false
-  );
-  document.addEventListener(
-    "footerLoaded",
-    function(e) {
-      console.log("footer loaded");
-    },
-    false
-  );
 }
