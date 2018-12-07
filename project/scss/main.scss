@@ -1,0 +1,17 @@
+@import "../../components/scss/header";
+@import "../../components/scss/footer";
+@import "../../components/scss/helpers";
+
+body{
+    background-color: rgb(240, 218, 192);
+    main{
+        form{
+            div{
+                padding: 20px 0;
+            }
+            #getJoke{
+                user-select: none;
+            }
+        }
+    }
+}
