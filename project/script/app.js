@@ -26,9 +26,6 @@ function init() {
 
     var myChuckNorris = new chuckNorrisModel(firstNameVal, lastNameVal);
 
-    var url = new URL("https://api.icndb.com/jokes/random/");
-
-    console.dir(url);
 
     var exludedCathegories = isSafeForWork ? "[explicit]" : null;
 
@@ -42,25 +39,7 @@ function init() {
       params.limitTo = "[nerdy]";
     }
 
-    url.search = new URLSearchParams(params);
+    console.log('params', params);
 
-    fetch(url)
-      .then(function(response) {
-        console.log("initial response: ", response);
-        return response.json();
-      })
-      .then(function(jsonResponse) {
-        console.log("json response: ", jsonResponse);
-        displayJoke(jsonResponse);
-      });
-  }
-
-  function displayJoke(joke) {
-    console.log(
-      "jike container",
-      document.querySelector("#jokeContainer p#actualJokeFromServer")
-    );
-    document.querySelector("#jokeContainer p#actualJokeFromServer").innerHTML =
-      joke.value.joke;
   }
 }
