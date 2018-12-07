@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
     loadHeader();
     loadFooter();
     insertFavicon();
-    reactToLoaders();
     initCheckboxes(); 
 });
 
@@ -81,13 +80,4 @@ function updateValueInLocalStorage(inputEl){
       agendaStorage.push({inputId:inputEl.id, checked:inputEl.checked});
       window.localStorage.setItem('agendaStorage', JSON.stringify(agendaStorageModel));
    }
-}
-
-function reactToLoaders(){
-   document.addEventListener('headerLoaded', function (e) {
-      console.log('header loaded');
-   }, false);
-   document.addEventListener('footerLoaded', function (e) {
-      console.log('footer loaded');
-   }, false);
 }
