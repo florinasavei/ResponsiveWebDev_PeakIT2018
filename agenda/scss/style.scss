@@ -1,0 +1,15 @@
+@import "../../components/scss/header";
+@import "../../components/scss/footer";
+@import "../../components/scss/helpers";
+
+:root {
+    --progres-bar-background: #f3f3f3;
+    --progres-bar-main: #95d015;
+    --progres-bar-gradient: #a5c956
+}
+
+@import "./progressBar";
+
+ul ul {
+    padding-bottom: 15px
+}
