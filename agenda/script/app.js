@@ -77,7 +77,7 @@ function updateValueInLocalStorage(inputEl){
       window.localStorage.setItem('agendaStorage', JSON.stringify(agendaStorageModel));
    }
    else{
-      agendaStorage.push({inputId:inputEl.id, checked:inputEl.checked});
+      agendaStorageModel.push({inputId:inputEl.id, checked:inputEl.checked});
       window.localStorage.setItem('agendaStorage', JSON.stringify(agendaStorageModel));
    }
 }
