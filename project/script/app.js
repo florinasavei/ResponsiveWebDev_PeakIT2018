@@ -61,7 +61,7 @@ function init() {
         return response.json();
       })
       .then(function(jsonResponse) {
-        console.log("json response: ", jsonResponse);
+        console.log("json response from server: ", jsonResponse);
         displayJoke(jsonResponse);
       });
   }
